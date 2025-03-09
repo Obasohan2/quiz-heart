@@ -28,3 +28,35 @@ hr {
     width: 80%;
     margin: 20px auto;
   }
+
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: #001e4d;
+    color: white;
+  }
+
+  #reg-btn button {
+    padding-left: 20px;
+  }
+  button:hover {
+    background-color: #c6c9cc;
+    color: #001e4d;
+    font-weight: bold;
+  }
+
+  /* Header and Logo */
+#heading-logo {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .logo {
+    width: 90px;
+    vertical-align: middle;
+    padding-right: 4px;
+  }
