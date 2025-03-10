@@ -119,5 +119,31 @@ let score = 0;
 let timeLeft = 60;
 let timer;
 
+// Retrieve stored usernames from localStorage (or initialize an empty list)
+let existingUsernames = JSON.parse(localStorage.getItem("usernames")) || [];
+
+// Registration Logic
+document.getElementById("register-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    let username = document.getElementById("register-username").value.trim();
+
+    if (username === "") {
+        Swal.fire("Username cannot be empty!");
+        return false;
+    }
+
+    if (existingUsernames.includes(username)) {
+        Swal.fire("Username already exists! Choose a different one.");
+        return false;
+    }
+
+    // Register new username
+    existingUsernames.push(username);
+    localStorage.setItem("usernames", JSON.stringify(existingUsernames));
+    Swal.fire("Registration successful! You can use this registered Username to now log in.");
+    return true;
+});
+
 
 
