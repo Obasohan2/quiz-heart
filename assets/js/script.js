@@ -312,3 +312,38 @@ nextButton.addEventListener("click", () => {
 });
 
 
+// Save Score
+saveScoreBtn.addEventListener("click", () => {
+    let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    const username = localStorage.getItem("username");
+    highScores.push({ username, score });
+    highScores.sort((a, b) => b.score - a.score); //It sorts the scores from highest to lowest.
+    highScores = highScores.slice(0, 5);   //It retains only the top 5 scores by slicing the array.
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+    Swal.fire("Score saved!");
+});
+
+// View High Scores
+viewScoresBtn.addEventListener("click", displayHighScores);
+
+function displayHighScores(){
+    highScoresSection.style.display = "block";
+    scoreSection.style.display = "none";
+    highScoresList.innerHTML = "";
+    const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    highScores.forEach(entry => {
+        const li = document.createElement("li");
+        li.textContent = `${entry.username}: ${entry.score}`;
+        highScoresList.appendChild(li);
+    });
+}
+
+// Play Again
+playAgainBtn.addEventListener("click", () => {
+    scoreSection.style.display = "none";
+    quizContainer.style.display = "block";
+    startQuiz();
+});
+
+
+
