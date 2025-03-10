@@ -19,7 +19,7 @@ body {
 
 h1,
 h2 {
-  color: #333;
+  color: #333333;
 }
 
 hr {
@@ -40,18 +40,20 @@ button {
   color: white;
 }
 
+p{
+  color:red;
+  }
+
+/* Hide the container */
 #high-scores-section, #score-section, #quiz-container{
   display: none;
   }
-    
+
   .container{
   display: none;
   }
   
-  p{
-  color:red;
-  }
-
+/* register button */
 #reg-btn button {
   padding-left: 20px;
 }
@@ -243,7 +245,7 @@ li {
 
 @media screen and (max-width: 480px) {
   #heading-logo {
-    padding: 5px;
+    padding: 2px;
   }
 
   .heading {

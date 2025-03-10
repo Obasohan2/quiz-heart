@@ -94,15 +94,11 @@ const questions = [
             { text: "Rishi Sunak", correct: false },
         ]
     },
-]
+];
 
 // declaring variable element
 const loginPage = document.getElementById("login-page");
-const registerForm = document.getElementById("register-form");
-const registerUsername = document.getElementById("register-username");
 const quizContainer = document.getElementById("quiz-container");
-const loginForm = document.getElementById("login-form");
-const usernameInput = document.getElementById("username");
 const userNameDisplay = document.getElementById("user-name");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
@@ -116,7 +112,6 @@ const playAgainBtn = document.getElementById("play-again-btn");
 const highScoresSection = document.getElementById("high-scores-section");
 const highScoresList = document.getElementById("high-scores-list");
 const checkHighScoresBtn = document.getElementById("check-highscores");
-const loginButton = document.getElementById("login-btn");
 
 //JavaScript code snippet initializes four variables
 let currentQuestionIndex = 0;
@@ -128,7 +123,7 @@ let timer;
 checkHighScoresBtn.addEventListener("click", () => {
     loginPage.style.display = "none";
     displayHighScores();
-})
+});
 
 // Retrieve stored usernames from localStorage (or initialize an empty list)
 let existingUsernames = JSON.parse(localStorage.getItem("usernames")) || [];
