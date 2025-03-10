@@ -3,90 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"/>
-
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
     <!-- the css style link -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Heart Quiz Game</title>
-
     <!--Sweetalert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
   </head>
   <body>
     <!--heading and logo -->
-    <div id="heading-logo">
-    <a href="index.html">
+    <div id="heading-logo"> <a href="index.html">
       <h1 class="heading">
         <img class="logo" src="assets/images/logo.png" alt="logo" /> Heart Quiz Game
       </h1>
     </a>
     </div>
-
     <div id="login-page" class="page">
-  <div id="register-container">
-      <h1>Register</h1>
-<form id="register-form">
-    <input type="text" id="register-username" placeholder="Enter a new username" required />
-    <button type="submit" id="reg-btn">Register</button>
-</form>
-</div>
-
-<hr/>
-
-<div id="login-container">
-      <h1>Login</h1>
-      <form id="login-form">
-        <input type="text" id="username" placeholder="Enter your username" required />
-        <div class="button-container">
+      <div id="register-container">
+         <h1>Register</h1>
+        <form id="register-form">
+          <input type="text" id="register-username" placeholder="Enter a new username" required />
+          <button type="submit" id="reg-btn">Register</button>
+        </form>
+      </div>
+      <hr/>
+      <div id="login-container">
+         <h1>Login</h1>
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Enter your username" required />
+          <div class="button-container">
             <button type="submit" id="login-btn">Login</button>
-        </div>
-    </form>
-    <button id="check-highscores">Check High Scores</button>
-    </div>
-    </div>
-
-    <!--quiz container -->
-    <div id="quiz-container" class="container">
-      <h1>Welcome <span id="user-name"></span>!</h1>
-
-      <!-- Game Area -->
-      <div class="game-area">
-        <div id="timer">Time Left: <span id="time-left">30</span> sec</div>
-
-        <h2 id="question">Q</h2>
-        <div id="answer-buttons">
-          <button class="btn">Answer1</button>
-          <button class="btn">Answer2</button>
-          <button class="btn">Answer3</button>
-          <button class="btn">Answer4</button>
-        </div>
-        <!-- next button for quiz question  -->
-        <button id="next-btn">Next</button>
+          </div>
+        </form>
+        <button id="check-highscores">Check High Scores</button>
       </div>
     </div>
-
-    <!-- Score Section (Hidden Initially) -->
-    <div id="score-section">
-      <h2>Your Score: <span id="final-score"></span></h2>
-      <button id="view-scores-btn">View Scores</button>
-      <button id="save-score-btn">Save Score</button>
-      <button id="play-again-btn">Play Again</button>
-    </div>
-
-    <!-- High Scores Section (Hidden Initially) -->
-    <div id="high-scores-section">
-      <h2>High Scores</h2>
-      <ul id="high-scores-list"></ul>
-      <a href="index.html" class="button">
+    <!--quiz container -->
+    <main class="container" id="quiz-container">
+      <section>
+         <h1>Welcome <span id="user-name"></span>!</h1>
+        <!-- Game Area -->
+        <article class="game-area">
+          <div id="timer">Time Left: <span id="time-left">30</span> sec</div>
+           <h2 id="question">Q</h2>
+          <div id="answer-buttons">
+            <button class="btn">Answer1</button>
+            <button class="btn">Answer2</button>
+            <button class="btn">Answer3</button>
+            <button class="btn">Answer4</button>
+          </div>
+          <!-- next button for quiz question -->
+          <button id="next-btn">Next</button>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <!-- Score Section (Hidden Initially) -->
+      <div id="score-section">
+         <h2>Your Score: <span id="final-score"></span></h2>
+        <button id="view-scores-btn">View Scores</button>
+        <button id="save-score-btn">Save Score</button>
+        <button id="play-again-btn">Play Again</button>
+      </div>
+      <!-- High Scores Section (Hidden Initially) -->
+      <div id="high-scores-section">
+         <h2>High Scores</h2>
+        <ul id="high-scores-list"></ul> <a href="index.html" class="button">
         Back to Heart Quiz Game
       </a>
-      <p><span><em>You MUST Login with your username</em></span></p>
-    </div>
-
-<!-- javascripts link -->
-<script src="assets\js\script.js"></script>
-</body>
+        <p><span><em>You MUST Login with your username</em></span>
+        </p>
+      </div>
+      <!-- javascripts link -->
+      <script src="assets\js\script.js"></script>
+    </footer>
+  </body>
 </html>

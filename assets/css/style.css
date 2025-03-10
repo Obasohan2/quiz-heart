@@ -11,265 +11,265 @@
 
 /* General Styles */
 body {
-  margin: 0;
-  padding: 0;
-  background: rgb(135, 206, 235);
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    background: rgb(135, 206, 235);
+    text-align: center;
 }
 
 h1,
 h2 {
-  color: #333333;
+    color: #333333;
 }
 
 hr {
-  height: 2px;
-  background: #ddd;
-  width: 80%;
-  margin: 20px auto;
+    height: 2px;
+    background: #ddd;
+    width: 80%;
+    margin: 20px auto;
 }
 
 button {
-  padding: 10px 20px;
-  margin: 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 30px;
-  background-color: #001e4d;
-  color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: #001e4d;
+    color: white;
 }
 
-p{
-  color:red;
-  }
+p {
+    color: red;
+}
 
 /* Hide the container */
-#high-scores-section, #score-section, #quiz-container{
-  display: none;
-  }
+#high-scores-section, #score-section, #quiz-container {
+    display: none;
+}
 
-  .container{
-  display: none;
-  }
-  
+.container {
+    display: none;
+}
+
 /* register button */
 #reg-btn button {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 button:hover {
-  background-color: #c6c9cc;
-  color: #001e4d;
-  font-weight: bold;
+    background-color: #c6c9cc;
+    color: #001e4d;
+    font-weight: bold;
 }
 
 /* Header and Logo */
 #heading-logo {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .logo {
-  width: 90px;
-  vertical-align: middle;
-  padding-right: 4px;
+    width: 90px;
+    vertical-align: middle;
+    padding-right: 4px;
 }
 
 .heading {
-  display: inline;
-  color: #001e4d;
-  text-align: center;
-  font-size: 35px;
-  padding-right: 10px;
-  padding-bottom: 5%;
+    display: inline;
+    color: #001e4d;
+    text-align: center;
+    font-size: 35px;
+    padding-right: 10px;
+    padding-bottom: 5%;
 }
 
 a:link {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 /* Login & Register Page */
 #login-page {
-  max-width: 400px;
-  margin: 15px auto;
-  background: #fff;
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px 5px;
-  box-sizing: border-box;
-  position: relative;
-  justify-content: center;
-  display: grid;
-  align-items: center;
+    max-width: 400px;
+    margin: 15px auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    display: grid;
+    align-items: center;
 }
 
 input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .button-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* Quiz Container */
 #quiz-container {
-  max-width: 600px;
-  margin: 15px auto;
-  background: white;
-  padding: 5px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px 5px;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
+    max-width: 600px;
+    margin: 15px auto;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-area {
-  text-align: center;
-  position: relative;
-  justify-content: center;
+    text-align: center;
+    position: relative;
+    justify-content: center;
 }
 
 #answer-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /*----next button styling-----*/
 #next-btn {
-  background: #001e4d;
-  color: #fff;
-  font-weight: 500;
-  width: 150px;
-  border: 0;
-  padding: 10px;
-  margin: 20px auto 0;
-  border-radius: 4px;
-  cursor: pointer;
-  justify-content: center;
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
 
-  /**button value is none to make it hidden***/
-  display: none;
+    /**button value is none to make it hidden***/
+    display: none;
 }
 
 .btn {
-  background-color: #001e4d;
-  color: #fff;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 20px;
-  cursor: pointer;
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .btn:hover {
-  background-color: hsl(348, 4%, 78%);
+    background-color: hsl(348, 4%, 78%);
 }
 
 .button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 15px 10px;
-  background-color: #001e4d;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 16px;
-  border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 10px;
+    background-color: #001e4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
 }
 
 .button:hover {
-  background-color: #c6c9cc;
-  color: #001e4d;
-  font-weight: bold;
+    background-color: #c6c9cc;
+    color: #001e4d;
+    font-weight: bold;
 }
 
 /**styling the response of correct and incorrect answers***/
 .correct {
-  background: rgb(3, 233, 103);
+    background: rgb(3, 233, 103);
 }
 
 .incorrect {
-  background: #bb0505;
+    background: #bb0505;
 }
 
 /* Score Section */
 #score-section,
 #high-scores-section {
-  max-width: 400px;
-  margin: 5px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 25px;
-  box-shadow: 0 0 15px 5px;
+    max-width: 400px;
+    margin: 5px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px 5px;
 }
 
 #high-scores-section li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 li {
-  padding: 20px;
-  background-color: #f6f6f6;
-  border: 1px solid #ddd;
-  border-radius: 25px;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 25px;
 }
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  #login-page,
-  #quiz-container,
-  #score-section,
-  #high-scores-section {
-    width: 90%;
-    margin: 20px auto;
-    padding: 15px;
-  }
+    #login-page,
+    #quiz-container,
+    #score-section,
+    #high-scores-section {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
 
-  h1 {
-    font-size: 20px;
-  }
+    h1 {
+        font-size: 20px;
+    }
 
-  button {
-    font-size: 14px;
-    padding: 8px;
-    margin-left: 5px;
-  }
+    button {
+        font-size: 14px;
+        padding: 8px;
+        margin-left: 5px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-  #heading-logo {
-    padding: 2px;
-  }
+    #heading-logo {
+        padding: 2px;
+    }
 
-  .heading {
-    font-size: 30px;
-    padding-left: 10px;
-    justify-content: center;
-    text-align: center;
-  }
+    .heading {
+        font-size: 30px;
+        padding-left: 10px;
+        justify-content: center;
+        text-align: center;
+    }
 
-  .logo {
-    width: 45px;
-  }
+    .logo {
+        width: 45px;
+    }
 
-  button {
-    width: 60%;
-    margin-left: 5px;
-  }
+    button {
+        width: 60%;
+        margin-left: 5px;
+    }
 
-  #answer-buttons {
-    flex-direction: column;
-  }
+    #answer-buttons {
+        flex-direction: column;
+    }
 
-  .btn {
-    font-size: 14px;
-  }
-  
+    .btn {
+        font-size: 14px;
+    }
+
 }
