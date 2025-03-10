@@ -172,3 +172,62 @@ hr {
   }
   
 
+  li {
+    padding: 20px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+  }
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    #login-page,
+    #quiz-container,
+    #score-section,
+    #high-scores-section {
+      width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px;
+      margin-left: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #heading-logo {
+      padding: 5px;
+    }
+  
+    .heading {
+      font-size: 30px;
+      padding-left: 10px;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .logo {
+      width: 45px;
+    }
+  
+    button {
+      width: 60%;
+      margin-left: 5px;
+    }
+  
+    #answer-buttons {
+      flex-direction: column;
+    }
+  
+    .btn {
+      font-size: 14px;
+    }
+    
+  }
+  
