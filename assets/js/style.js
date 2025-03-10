@@ -147,3 +147,34 @@ document.getElementById("register-form").addEventListener("submit", function(eve
 
 
 
+// Login Logic
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    let username = document.getElementById("username").value.trim();
+
+    // Initially disable the login button
+    //loginButton.disabled = true;
+
+    if (username === "") {
+        Swal.fire("Username cannot be empty!");
+        return false;
+    }
+
+
+    if (!existingUsernames.includes(username)) {
+        Swal.fire("Username not found! Please register a username.");
+        return false;
+    }
+
+    Swal.fire("Login successful! Redirecting...Click OK to continue");
+
+    localStorage.setItem("username", username);
+    userNameDisplay.textContent = username;
+    loginPage.style.display = "none";
+    quizContainer.style.display = "block";
+    startQuiz();
+});
+
+
+
