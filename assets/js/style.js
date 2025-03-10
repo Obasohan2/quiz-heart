@@ -96,3 +96,28 @@ const questions = [
     },
 ]
 
+// declaring variable element
+const loginPage = document.getElementById("login-page");
+const registerForm = document.getElementById("register-form");
+const registerUsername = document.getElementById("register-username");
+const quizContainer = document.getElementById("quiz-container");
+const loginForm = document.getElementById("login-form");
+const usernameInput = document.getElementById("username");
+const userNameDisplay = document.getElementById("user-name");
+const questionElement = document.getElementById("question");
+const answerButtons = document.getElementById("answer-buttons");
+const nextButton = document.getElementById("next-btn");
+const timerElement = document.getElementById("time-left");
+const scoreSection = document.getElementById("score-section");
+const finalScoreElement = document.getElementById("final-score");
+const viewScoresBtn = document.getElementById("view-scores-btn");
+const saveScoreBtn = document.getElementById("save-score-btn");
+
+//JavaScript code snippet initializes four variables
+let currentQuestionIndex = 0;
+let score = 0;
+let timeLeft = 60;
+let timer;
+
+
+
