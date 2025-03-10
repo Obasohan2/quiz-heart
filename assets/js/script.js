@@ -112,12 +112,23 @@ const scoreSection = document.getElementById("score-section");
 const finalScoreElement = document.getElementById("final-score");
 const viewScoresBtn = document.getElementById("view-scores-btn");
 const saveScoreBtn = document.getElementById("save-score-btn");
+const playAgainBtn = document.getElementById("play-again-btn");
+const highScoresSection = document.getElementById("high-scores-section");
+const highScoresList = document.getElementById("high-scores-list");
+const checkHighScoresBtn = document.getElementById("check-highscores");
+const loginButton = document.getElementById("login-btn");
 
 //JavaScript code snippet initializes four variables
 let currentQuestionIndex = 0;
 let score = 0;
 let timeLeft = 60;
 let timer;
+
+//Check High Score 
+checkHighScoresBtn.addEventListener("click", () => {
+    loginPage.style.display = "none";
+    displayHighScores();
+})
 
 // Retrieve stored usernames from localStorage (or initialize an empty list)
 let existingUsernames = JSON.parse(localStorage.getItem("usernames")) || [];
