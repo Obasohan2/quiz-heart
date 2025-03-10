@@ -177,4 +177,24 @@ document.getElementById("login-form").addEventListener("submit", function(event)
 });
 
 
+// Start Quiz
+function startQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    timeLeft = 30;
+    nextButton.style.display = "none";
+    startTimer();
+    showQuestion();
+}
 
+// Timer Function
+function startTimer() {
+    timer = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            showScore();
+        }
+    }, 1000);
+}
