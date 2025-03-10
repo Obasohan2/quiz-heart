@@ -40,6 +40,18 @@ button {
   color: white;
 }
 
+#high-scores-section, #score-section, #quiz-container{
+  display: none;
+  }
+    
+  .container{
+  display: none;
+  }
+  
+  p{
+  color:red;
+  }
+
 #reg-btn button {
   padding-left: 20px;
 }
