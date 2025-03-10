@@ -87,4 +87,31 @@ hr {
     justify-content: center;
   }
 
+  /* Quiz Container */
+#quiz-container {
+    max-width: 600px;
+    margin: 15px auto;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game-area {
+    text-align: center;
+    position: relative;
+    justify-content: center;
+  }
   
+  #answer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  
+  
+
