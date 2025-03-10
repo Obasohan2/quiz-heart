@@ -112,6 +112,63 @@ hr {
     gap: 10px;
   }
 
+  /*----next button styling-----*/
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
   
+    /**button value is none to make it hidden***/
+    display: none;
+  }
+  
+  .btn {
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: hsl(348, 4%, 78%);
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 10px;
+    background-color: #001e4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+  }
+
+  .button:hover {
+    background-color: #c6c9cc;
+    color: #001e4d;
+    font-weight: bold;
+  }
+  
+  /**styling the response of correct and incorrect answers***/
+  .correct {
+    background: rgb(3, 233, 103);
+  }
+  
+.incorrect {
+    background: #bb0505;
+  }
   
 
