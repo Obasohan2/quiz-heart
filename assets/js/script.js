@@ -94,7 +94,7 @@ const questions = [
             { text: "Rishi Sunak", correct: false },
         ]
     },
-]
+];
 
 // declaring variable element
 const loginPage = document.getElementById("login-page");
