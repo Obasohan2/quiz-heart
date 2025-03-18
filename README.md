@@ -41,12 +41,12 @@ In my css file I have used variables to declare colours, and then used these thr
 
 - I used rgb(135, 206, 235) as a background colour.
 - I used #333333 for heading
-I have used #E6ECF0 as the button background.
-I have use #c6c9cc for the hover background
-I have used #fff as the text colour
-I have used #001e4d;; for the button background
-I have used rgb(3, 233, 103) to display the correct answer .
-I have used #bb0505; to display the wrong answer .
+- I have used #E6ECF0 as the button background.
+- I have use #c6c9cc for the hover background
+- I have used #fff as the text colour
+- I have used #001e4d;; for the button background
+- I have used rgb(3, 233, 103) to display the correct answer .
+- I have used #bb0505; to display the wrong answer .
 
 
 ## Technologies Used
@@ -117,11 +117,6 @@ HTML, CSS, Javascript
 | View Score button | Clicking on this button will allow user to view all the saved scores in the score section | Clicked the View Score button | Score viewed | Pass |
 | Back to Heart Quiz Game button | Clicking on this button will allow user to go back to the home page and login to start the game.| Clicked the Back to Heart Quiz Game button  | Back to the home page | Pass |
 | All buttons - hover effect | All buttons with a blue background & white text should change when hovered over to a background colour of grey with blue text. | Hover over each button on the page | Each button displayed the correct styling when hovered over | Pass |
-
-
-
-
-
 
 
 ## Code Validation
