@@ -67,37 +67,9 @@ HTML, CSS, Javascript
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices. <img src="assets\images\responsive.png" alt="Responsive Heart Quiz Game">
 
 
-# Testing
+# Testing & Code Validation
 
 Please refer to [TESTING.md](./TESTING.md) for all testing carried out.
-
-## Manual Testing
-
-### Test Cases
-
-| Test Case ID | Description | Steps | Expected Result | Actual Result | Status |
-| --- | --- | --- | --- | --- | --- |
-| TC-001 | User Login | 1. Navigate to login page 2. Enter valid username & password  3. Click login | User is logged in successfully| Login successful! Redirecting...Click OK to continue | Passed |
-| TC-002 | Invalid Login | 1. Navigate to login page  2. Enter invalid username & password  3. Click login | Invalid message displayed | Username not found! Please register a username. | Passed |
-| TC-003 | Register | Register Username and click on Register button | Display message that Username is registered | Registration successful! You can use this registered Username to now log in. | Passed |
-
-
-### Usernames Used for Testing
-
-| Username |Test Case ID | Purpose | 
-| --- | --- | --- |
-| DREAMS | TC-001 | Valid login test |
-| Dreams | TC-002 | Invalid login test |
-| John | TC-003 | Register Username Test |
-
-
-## Code Validation
-
-- I used (https://jshint.com) [JSHint JavaScript Validator] to validate all the Javascript codes which resulted: "Document checking completed. No errors but warnings show"
-- I used (https://validator.w3.org) [HTML Validator w3c] to validate all the HTML codes which resulted: "Document checking completed. No errors or warnings to show"
-- I used (https://jigsaw.w3.org") [CSS Validator jigsaw] to validate the CSS codes to validate the CSS style codes and resulted: "Congratulations! No Error Found"
-- I used the google chrome "Lighthouse" Developer Tools to test and analise with score results as follows: Performance: 88%, Accessibility: 100%, Best Practices: 96%, SEO:91%
-<img src="assets\images\lighthouse.png" alt="Lighthouse Score">
 
 
 ## Deployment & Local Development

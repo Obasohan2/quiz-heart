@@ -1,5 +1,24 @@
-## Manual Testing 
-### Testing User Stories
+# Manual Testing & Code Validation
+
+## Testing User Stories
+
+### Test Cases
+
+| Test Case ID | Description | Steps | Expected Result | Actual Result | Status |
+| --- | --- | --- | --- | --- | --- |
+| TC-001 | User Login | 1. Navigate to login page 2. Enter valid username & password  3. Click login | User is logged in successfully| Login successful! Redirecting...Click OK to continue | Passed |
+| TC-002 | Invalid Login | 1. Navigate to login page  2. Enter invalid username & password  3. Click login | Invalid message displayed | Username not found! Please register a username. | Passed |
+| TC-003 | Register | Register Username and click on Register button | Display message that Username is registered | Registration successful! You can use this registered Username to now log in. | Passed |
+
+
+### Usernames Used for Testing
+
+| Username |Test Case ID | Purpose | 
+| --- | --- | --- |
+| DREAMS | TC-001 | Valid login test |
+| Dreams | TC-002 | Invalid login test |
+| John | TC-003 | Register Username Test |
+
 
 `Home Page`
 
@@ -48,3 +67,12 @@
 | View Score button | Clicking on this button will allow user to view all the saved scores in the score section | Clicked the View Score button | Score viewed | Pass |
 | Back to Heart Quiz Game button | Clicking on this button will allow user to go back to the home page and login to start the game.| Clicked the Back to Heart Quiz Game button  | Back to the home page | Pass |
 | All buttons - hover effect | All buttons with a blue background & white text should change when hovered over to a background colour of grey with blue text. | Hover over each button on the page | Each button displayed the correct styling when hovered over | Pass |
+
+
+## Code Validation
+
+- I used (https://jshint.com) [JSHint JavaScript Validator] to validate all the Javascript codes which resulted: "Document checking completed. No errors but warnings show"
+- I used (https://validator.w3.org) [HTML Validator w3c] to validate all the HTML codes which resulted: "Document checking completed. No errors or warnings to show"
+- I used (https://jigsaw.w3.org") [CSS Validator jigsaw] to validate the CSS codes to validate the CSS style codes and resulted: "Congratulations! No Error Found"
+- I used the google chrome "Lighthouse" Developer Tools to test and analise with score results as follows: Performance: 88%, Accessibility: 100%, Best Practices: 96%, SEO:91%
+<img src="assets\images\lighthouse.png" alt="Lighthouse Score">
